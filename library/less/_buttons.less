@@ -1,0 +1,104 @@
+/*********************
+BUTTONS
+*********************/
+
+.filter-hide {
+    display: none;
+}
+
+.filter-button {
+	cursor: pointer;
+    .border-radius(4px);
+
+    &:active {
+        color: @white;
+        border: 1px solid darken(@bones-pink, 13%);
+        border-top-color: darken(@bones-pink, 7%);
+        border-left-color: darken(@bones-pink, 7%);
+        .css-gradient(@bones-pink,darken(@bones-pink, 5%));
+    }
+
+    &.filter-button-active {
+        color: @white;
+        border: 1px solid darken(@bones-pink, 13%);
+        border-top-color: darken(@bones-pink, 20%);
+        border-left-color: darken(@bones-pink, 20%);
+        .css-gradient(darken(@bones-pink, 10%),darken(@bones-pink, 20%));
+    }
+}
+
+.filter-text, .filter-button {
+    padding: 4px 12px;
+    display: inline-block;
+    font-size: 15px;
+    text-decoration: none;
+    text-shadow: 0 1px rgba(0,0,0, .75);
+    margin: 0 0 20px;
+    line-height: 21px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+}
+
+#main .filter  {
+    margin: -1em 0 0;
+    text-indent: 0;
+    padding: 0;
+
+    .filter-text:first-child {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+	#main ul .filter-text {
+		width: 100%;
+		margin-bottom: 0;
+    }
+}
+
+.button, .button:visited, button[type='submit'] {
+	border: 1px solid darken(@bones-pink, 13%);
+	border-top-color: darken(@bones-pink, 7%);
+	border-left-color: darken(@bones-pink, 7%);
+	padding: 4px 12px;
+	color: @white;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 0 1px rgba(0,0,0, .75);
+	cursor: pointer;
+	margin-bottom: 20px;
+	line-height: 21px;
+	.transition();
+	.border-radius(4px);
+	.css-gradient(@bones-pink,darken(@bones-pink, 5%));
+
+	&:hover, &:focus {
+		color: @white;
+	  border: 1px solid darken(@bones-pink, 13%);
+	  border-top-color: darken(@bones-pink, 20%);
+	 	border-left-color: darken(@bones-pink, 20%);
+		.css-gradient(darken(@bones-pink, 5%),darken(@bones-pink, 10%));
+	}
+
+	&:active {
+		.css-gradient(darken(@bones-pink, 5%),@bones-pink);
+	}
+}
+
+.blue-button, .blue-button:visited {
+	border-color: darken(@bones-blue, 10%);
+	text-shadow: 0 1px 1px darken(@bones-blue, 10%);
+	.css-gradient( @bones-blue, darken(@bones-blue, 5%) );
+	-webkit-box-shadow: inset 0 0 3px lighten(@bones-blue, 16%);
+       -moz-box-shadow: inset 0 0 3px lighten(@bones-blue, 16%);
+   	        box-shadow: inset 0 0 3px lighten(@bones-blue, 16%);
+	&:hover, &:focus {
+		border-color: darken(@bones-blue, 15%);
+		.css-gradient( darken(@bones-blue, 4%), darken(@bones-blue, 10%) );
+	}
+	&:active {
+		.css-gradient( darken(@bones-blue, 5%), @bones-blue );
+	}
+}

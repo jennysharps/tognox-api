@@ -1,0 +1,368 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+	max-width: 1140px;
+        width: 750px;
+}
+
+/*********************
+HEADER SYTLES
+*********************/
+
+.header {
+	nav[role=navigation] {
+        clear: both;
+        margin-top: .75em;
+        text-align: center;
+    }
+
+	padding-bottom: 1em;
+
+	#site-info {
+		text-align: left;
+		width: 530px;
+
+		.site-info-logo {
+			float: left; 
+		}
+
+		.site-info-text {
+			width: 430px;
+			text-align: left;
+			float: left;
+		}
+	}
+
+        #inner-header {
+                position: relative;
+        }
+
+}
+
+	#logo {}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.nav.top-nav {
+	border: 0;
+
+	li {
+		float: left;
+		position: relative;
+
+                a {
+                        border: 0;
+		}
+
+                &.current-menu-item, &.current-menu-parent, &.current-menu-ancestor, &.current_page_parent {
+                        &>a{
+                                border-bottom: 2px solid @black;
+                                color: @black;
+                         }
+                }
+
+                &:hover, &:focus {
+                        &>a {
+                                border-bottom: 2px solid #000;
+                        }
+                }
+
+		/*
+		plan your menus and drop-downs wisely.
+		*/
+		ul.sub-menu,
+		ul.children {
+			border: 0;
+			/* position: absolute; */
+                        font-size: .9em;
+
+			li {
+
+				a {
+                                        padding: 0 0 2px;
+					border-right: 0;
+					display: block;
+				}
+			}
+
+		}
+
+
+	} /* end .menu ul li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current-page-ancestor {
+		a {}
+	}  /* end current highlighters */
+
+} /* end .nav */
+
+.nav.top-nav {
+        display: inline-block;
+        margin-top: 1em;
+
+        .sub-menu {
+                background: #FFF;
+
+                li {
+                        text-indent: 0;
+                        display: inline-block;
+                        width: auto;
+                        margin-top: -1em;
+
+                        a, &.current-menu-parent a,
+                        &.current-menu-ancestor a, &.current_page_parent a {
+                            padding-bottom: 2px;
+                        }
+
+                        &:hover a, &.current-menu-parent>a,
+                        &.current-menu-ancestor>a, &.current_page_parent>a {
+                            border-bottom: 2px solid #000;
+                        }
+
+                }
+        }
+
+	li {
+
+		a, a:hover, a:visited:hover, a:focus, a:visited:focus {
+                    padding: 0;
+                    margin: 0 1.1em;
+                    color: #000;
+		}
+
+                &.menu-item-object-resources, &.download-button {
+                        a {
+
+                                margin-right: 0;
+                                margin-top: 2px;
+                                .border-radius(4px);
+                                display: inline-block;
+                                padding: 0 12px;
+                                line-height: 34px;
+
+                                &:hover, &:focus {
+                                        color: @white;
+                                        border: 1px solid darken(@bones-pink, 13%);
+                                        border-top-color: darken(@bones-pink, 20%);
+                                        border-left-color: darken(@bones-pink, 20%);
+                                        .css-gradient(darken(@bones-pink, 10%),darken(@bones-pink, 20%));
+                                }
+                        }
+
+                        &.current-menu-item, &.current-menu-parent, &.current-menu-ancestor, &.current_page_parent  {
+                                &>a {
+                                        color: @white;
+                                        border: 1px solid darken(@bones-pink, 13%);
+                                        border-top-color: darken(@bones-pink, 20%);
+                                        border-left-color: darken(@bones-pink, 20%);
+                                        .css-gradient(darken(@bones-pink, 10%),darken(@bones-pink, 20%));
+                                }
+                        }
+                }
+	}
+
+}
+
+#main .filter {
+	text-align: right;
+}
+
+.post-type-archive-resources {
+    .item-resources {
+        width: 33.333%;
+        float: left;
+    }
+}
+
+.post-type-archive-main_projects article.type-main_projects {
+
+        header {
+
+                h1 {
+                        position: absolute;
+                        bottom: 0px;
+                }
+       }
+}
+
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+
+	.widgettitle {
+		border-bottom: 2px solid #444;
+		margin-bottom: 0.75em;
+	}
+
+	.widget {
+		padding: 0 10px;
+		margin: 1em 0;
+
+		ul {
+			li {
+				margin-bottom: 0.75em;
+
+				&:first-child {}
+				&:last-child {}
+				a {}
+				/* deep nesting */
+
+				ul {
+					margin-top: 0.75em;
+					padding-left: 1em;
+				}
+			}
+		}
+	}
+
+
+	/* links widget */
+	.widget_links {}
+	.widget_links ul {}
+	.widget_links ul li {}
+	.widget_links ul li a {}
+
+	/* meta widget */
+	.widget_meta {}
+	.widget_meta ul {}
+	.widget_meta ul li {}
+	.widget_meta ul li a {}
+
+	/* pages widget */
+	.widget_pages {}
+	.widget_pages ul {}
+	.widget_pages ul li {}
+	.widget_pages ul li a {}
+
+	/* recent-posts widget */
+	.widget_recent_entries {}
+	.widget_recent_entries ul {}
+	.widget_recent_entries ul li {}
+	.widget_recent_entries ul li a {}
+
+	/* archives widget */
+	.widget_archive {}
+	.widget_archive ul {}
+	.widget_archive ul li {}
+	.widget_archive ul li a {}
+	.widget_archive select {}
+	.widget_archive option {}
+
+	/* tag-cloud widget */
+	.widget_links {}
+	.widget_links li:after {}
+	.widget_links li:before {}
+	.widget_tag_cloud {}
+	.widget_tag_cloud a {}
+	.widget_tag_cloud a:after {}
+	.widget_tag_cloud a:before {}
+
+	/* calendar widget */
+	.widget_calendar {}
+	#calendar_wrap {}
+	#calendar_wrap th {}
+	#calendar_wrap td {}
+	#wp-calendar tr td {}
+	#wp-calendar caption {}
+	#wp-calendar a {}
+	#wp-calendar #today {}
+	#wp-calendar #prev {}
+	#wp-calendar #next {}
+	#wp-calendar #next a {}
+	#wp-calendar #prev a {}
+
+	/* category widget */
+	.widget_categories {}
+	.widget_categories ul {}
+	.widget_categories ul li {}
+	.widget_categories ul ul.children {}
+	.widget_categories a {}
+	.widget_categories select{}
+	.widget_categories select#cat {}
+	.widget_categories select.postform {}
+	.widget_categories option {}
+	.widget_categories .level-0 {}
+	.widget_categories .level-1 {}
+	.widget_categories .level-2 {}
+	.widget_categories .level-3 {}
+
+	/* recent-comments widget */
+	.recentcomments {}
+	#recentcomments {}
+	#recentcomments li {}
+	#recentcomments li a {}
+	.widget_recent_comments {}
+
+	/* search widget */
+	#searchform {}
+	.widget_search {}
+	.screen-reader-text {}
+
+	/* text widget */
+	.textwidget {}
+	.widget_text {}
+	.textwidget p {}
+
+
+/*********************
+FOOTER STYLES
+*********************/
+
+/*
+you'll probably need to do quite a bit
+of overriding here if you styled them for
+mobile. Make sure to double check these!
+*/
+.footer {
+	text-align: left;
+        nav li a {
+                border-bottom: 0;
+        }
+}
+
+.footer-links {
+	ul {
+		li {
+			a {
+				&:hover {}
+			}
+			/*
+			be careful with the depth of your menus.
+			it's very rare to have multi-depth menus in
+			the footer.
+			*/
+			ul {}
+		}
+	}
+} /* end .footer-links */
+

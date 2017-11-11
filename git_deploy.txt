@@ -1,0 +1,593 @@
+* Deployment Log
+* url: https://github.com/jennysharps/tognox-theme
+
+Pull triggered by 8d6459b94ce93e86086038a2c1562be2853c41a6: Testing push hook 2
+ Response: Updating 2e98d0e..8d6459b
+Fast-forward
+ README | 2 --
+ 1 file changed, 2 deletions(-)
+
+Pull triggered by : ReadMe updated
+ Response: Updating 8d6459b..b7f58f9
+Fast-forward
+ README | 2 ++
+ 1 file changed, 2 insertions(+)
+
+Pull triggered by f98b4f70604244c8146008d6b815bf1a49e36ff0: Adding new publications post type
+ Response: Updating b7f58f9..f98b4f7
+
+Pull triggered by 1d08462a5dd1c2a53f809b5ba72ca0d74eba5de7: Adding new publications post type--change to functions.php
+ Response: Updating b7f58f9..1d08462
+
+Pull triggered by 1d08462a5dd1c2a53f809b5ba72ca0d74eba5de7: ReadMe updated
+ Response: Updating b7f58f9..1d08462
+
+Pull triggered by : 
+ Response: Updating b7f58f9..1d08462
+
+Update triggered by : 
+ Response: HEAD is now at 1d08462 Adding new publications post type--change to functions.php
+
+Update triggered by eea659c26c79d3b0c40b82a5bc7ffb4202d2e942: Restore original main nav fonts
+ Response: HEAD is now at eea659c Restore original main nav fonts
+
+Update triggered by fa8ae7859cc723d46627e4eba3f4c77788734412: Change all fonts to Helvetica
+ Response: HEAD is now at fa8ae78 Change all fonts to Helvetica
+
+Update triggered by 9ac6684d88435a96503b4970dfd240eab7c2c9ad: try to remove nonce error
+ Response: HEAD is now at 9ac6684 try to remove nonce error
+
+Update triggered by 12c2ded88851f6cfb683549a029190db77282039: try to remove nonce error
+ Response: HEAD is now at 12c2ded try to remove nonce error
+
+Update triggered by 1dae6b20deab8587ebb01671fc1d5efacbc28163: try to remove nonce error
+ Response: HEAD is now at 1dae6b2 try to remove nonce error
+
+Update triggered by 941a60e9413951e01647fae1815b1abb8be665eb: Add dosnloads custom post type
+ Response: HEAD is now at 941a60e Add dosnloads custom post type
+
+Update triggered by 63099f560ff9d2b0cec7dc05783ede04831cf8b9: Update header to use new logo
+ Response: HEAD is now at 63099f5 Update header to use new logo
+
+Update triggered by abca002ee56d8dc10e589ebc3c3796300d22f945: Update bloginfo bug
+ Response: HEAD is now at abca002 Update bloginfo bug
+
+Update triggered by bb8efecbe6a3a7f591d1dee9f5665b82739e0d65: Update header to use new logo
+ Response: HEAD is now at bb8efec Update header to use new logo
+
+Update triggered by 79d7415965f120ecf017c63b7923291ee92d0620: Update new header styles
+ Response: HEAD is now at 79d7415 Update new header styles
+
+Update triggered by 836e05f48f7be3032a9dcdc217aa62865a0da32d: Header markup update
+ Response: HEAD is now at 836e05f Header markup update
+
+Update triggered by e0c69b02c35333c6ee7923ad639b7ee05b010db9: Fix header urls
+ Response: HEAD is now at e0c69b0 Fix header urls
+
+Update triggered by 542bbb34e1a999f9bf0efc2446997351736ad48b: Header updates
+ Response: HEAD is now at 542bbb3 Header updates
+
+Update triggered by fddbdbc68ee3c227c34bff132484694d147cdc5e: Fix header markup
+ Response: HEAD is now at fddbdbc Fix header markup
+
+Update triggered by : 
+ Response: HEAD is now at 166873b Fix header markup
+
+Update triggered by 6fd5ba5ac5a2c41c22c460a017fa6a2c1f74dc2f: Adding font for testing
+ Response: HEAD is now at 6fd5ba5 Adding font for testing
+
+Update triggered by 155568c03a4bd49f675af500076fed2c70345858: Adding font for testing
+ Response: HEAD is now at 155568c Adding font for testing
+
+Update triggered by 7acfaa070c09f14ac27e69283532b8d2098590b2: Update testing font paths
+ Response: HEAD is now at 7acfaa0 Update testing font paths
+
+Update triggered by 2725c07ec5cc267565ca91c6f7fe2822687fd8dd: Renamed fonts correctly for testing
+ Response: HEAD is now at 2725c07 Renamed fonts correctly for testing
+
+Update triggered by 34bac211d5f1a56bea06182c102fde4f9b9be3db: Add new font: LeagueGothic
+ Response: HEAD is now at 34bac21 Add new font: LeagueGothic
+
+Update triggered by 02a33cae5c3b16ab13371cab3e9fa5286c4ccbb6: Add new font: LeagueGothic
+ Response: HEAD is now at 02a33ca Add new font: LeagueGothic
+
+Update triggered by ba8d95e0b5001d1eb62c66cb4311efac828b31c6: Update font paths
+ Response: HEAD is now at ba8d95e Update font paths
+
+Update triggered by 713bb302f69aca0e8e1b9e1c3ff35cd809611f07: Add Ostrich font
+ Response: HEAD is now at 713bb30 Add Ostrich font
+
+Update triggered by 3fc4d3be635288137e32a8b1ca19b7c32c1e9cef: Adding Source font
+ Response: HEAD is now at 3fc4d3b Update font path
+
+Update triggered by 0d8bc30db23d6b7b917c7d1859be62204e418e20: Add Open Sans font
+ Response: HEAD is now at 0d8bc30 Add Open Sans font
+
+Update triggered by 0242a24c9fb8d7b5c9c305bcd161d60aa1caa44e: Update path to webfonts
+ Response: HEAD is now at 0242a24 Update path to webfonts
+
+Update triggered by e50173228ce3efd2d7337f391ecf9298f8f3aac6: Update path to webfonts
+ Response: HEAD is now at e501732 Update path to webfonts
+
+Update triggered by 29e7c6bbe16e635f908b2ea580a30dc30fea0fd5: Update path to webfonts
+ Response: HEAD is now at 29e7c6b Update path to webfonts
+
+Update triggered by 0c3ebac25b69e48e6e81d4a73082ad0878d819b1: Update path to webfonts
+ Response: HEAD is now at 0c3ebac Update path to webfonts
+
+Update triggered by 5c132e5aa64fa807c5f78654e8bf3e2d73865eab: Update site font to OpenSans
+ Response: HEAD is now at 5c132e5 Update site font to OpenSans
+
+Update triggered by 7d2e39612a537969b6045c0642bf254e32794dde: Update site font to OpenSans
+ Response: HEAD is now at 7d2e396 Update site font to OpenSans
+
+Update triggered by d11b0b994eed229952aa6323dfeb277d17f9f937: Update site font to OpenSans
+ Response: HEAD is now at d11b0b9 Update site font to OpenSans
+
+Update triggered by 0ee5884d4d2d02423f96aaa79dc1598ac94a9d66: Update site font to OpenSans
+ Response: HEAD is now at 0ee5884 Update site font to OpenSans
+
+Update triggered by 2c77ced181620956d11daedd754e646ea51a7831: Update site font to OpenSans
+ Response: HEAD is now at 2c77ced Update site font to OpenSans
+
+Update triggered by 9726a9b1d49e911f69fd63dc259ac2fbb769d080: Add TexGyre font
+ Response: HEAD is now at 9726a9b Add TexGyre font
+
+Update triggered by cc58d065843a0d8f09af4773659a893dc4438115: Add Arimo font
+ Response: HEAD is now at cc58d06 Add Arimo font
+
+Update triggered by 1affde3559f2dee3f32d16135c1eb09c46fe353e: Add Lato font
+ Response: HEAD is now at 1affde3 Add Lato font
+
+Update triggered by 361e8940dbcd7df874fc3eb82b3ff8278fc2ca5f: Add Lato font
+ Response: HEAD is now at 361e894 Add Lato font
+
+Update triggered by d4b686753a5ccf4b3da1075a926f87670c825c27: New style header updates
+ Response: HEAD is now at d4b6867 New style header updates
+
+Update triggered by 92e23508b099f20659d7cbe2bd00d5617e7adc8d: Update link color to orange, update nav font
+ Response: HEAD is now at 92e2350 Update link color to orange, update nav font
+
+Update triggered by a3b37bb9686fc43525ae948773b26b7833cb8d3d: Remove 'wrap' class from nav
+ Response: HEAD is now at a3b37bb Updated main header styles
+
+Update triggered by 8f2af66492b08eb1dccd7f843f82735bfe97d92b: Added custom download button style
+ Response: HEAD is now at 8f2af66 Added custom download button style
+
+Update triggered by 188a9fb04c868bb17c0f7393cdf7039c8fe6a862: Update custom nav button and hover states
+ Response: HEAD is now at 188a9fb Update custom nav button and hover states
+
+Update triggered by 42654a97ce9b2ae3cc517b48ed281a908f703ede: Update nat item current page state styles
+ Response: HEAD is now at 42654a9 Update nat item current page state styles
+
+Update triggered by c2f2812cd63873af0699d90bb395ecd639479d37: Update custom post type permalinks to set 'with_front' to false
+ Response: HEAD is now at c2f2812 Update custom post type permalinks to set 'with_front' to false
+
+Update triggered by f13b20ace6c88b485c2b906991789309fe20569c: Added flexslider carousel markup to homepage, added flexslider resources, delete carouFredSel jquery plugin, update styles, add file to register advance custom fields
+ Response: HEAD is now at f13b20a Update css file
+
+Update triggered by 6b805d1d1a907df35d3e96f13a814cb24ffb7716: Change acf front page location logic to be based on template rather than page id
+ Response: HEAD is now at 6b805d1 Change acf front page location logic to be based on template rather than page id
+
+Update triggered by 4e885a72ae7415590117bf0e305cd08c91b04e93: Show only standard post type on blog archives
+ Response: HEAD is now at 4e885a7 Show only standard post type on blog archives
+
+Update triggered by 36ff74ee91d176ddd360f0f82d8c5a529b382899: Update flexslider script
+ Response: HEAD is now at 36ff74e Update flexslider script
+
+Update triggered by 46518192fb8f91519f6dad801d8ea306a9ad9a1c: Add slider styles, update carousel markup, remove read more link from excerpts
+ Response: HEAD is now at 4651819 Add slider styles, update carousel markup, remove read more link from excerpts
+
+Update triggered by fe0dc3d99b01de77dddf62afb93861fa28a366b9: Remove 'publications' post type, register advanced custom fields
+ Response: HEAD is now at fe0dc3d Remove 'publications' post type, register advanced custom fields
+
+Update triggered by 8c01caed44b8065aaf5452da07cf35873329595a: Revert "Remove 'publications' post type, register advanced custom fields"
+
+This reverts commit fe0dc3d99b01de77dddf62afb93861fa28a366b9.
+ Response: HEAD is now at 8c01cae Add file field to citations
+
+Update triggered by 9255637c65d6e01d063ecd1a1a0bca3e8db8e6d4: Update favicon, add download icon for cpt
+ Response: HEAD is now at 9255637 Update favicon, add download icon for cpt
+
+Update triggered by e55f2fe6d48c06ada003853b881eaa2d5fe52e76: Update favicon
+ Response: HEAD is now at e55f2fe Update favicon
+
+Update triggered by ff76d894db904312f5378676bea8d5ad162cb827: Remove author info from post headers
+ Response: HEAD is now at ff76d89 Remove author info from post headers
+
+Update triggered by e8b1047d9231a8a06d379eb10a5266058ff51ebf: Add quotation to front page
+ Response: HEAD is now at e8b1047 Add quotation to front page
+
+Update triggered by 71b978b2ce96d2fc7a555b56a717f0059cb82584: Add check for quotation metadata to front page
+ Response: HEAD is now at 71b978b Add check for quotation metadata to front page
+
+Update triggered by 46cb9104f3d88b32e6d1a43612a3bf06c5438b87: Add check for quotation metadata to front page
+ Response: HEAD is now at 46cb910 Add check for quotation metadata to front page
+
+Update triggered by bd5b0e8c27cd0e06d42da175012dfe12b91a5d5c: Make front page quote font size smaller
+ Response: HEAD is now at bd5b0e8 Make front page quote font size smaller
+
+Update triggered by 448aa8411f611ce26f9c05f589336d4eb3c6fdb6: Add citations metabox to project
+ Response: HEAD is now at 448aa84 Add citations metabox to project
+
+Update triggered by 98f5d1d80a3b2733b14dcc9bf365ec9ce7e9d08b: Update citations metabox instructions
+ Response: HEAD is now at 98f5d1d Update citations metabox instructions
+
+Update triggered by 10499b124d4669686538a9205a97dc8e19a4254d: Add gallery shortcode to template
+ Response: HEAD is now at 10499b1 Add gallery shortcode to template
+
+Update triggered by 4ac1f3fc9aab9d68fa4ae365945e9c22d1ac67f0: Fix excerpt for homepage and revert normal excerpt for any other page, style blog page
+ Response: HEAD is now at 4ac1f3f Fix excerpt for homepage and revert normal excerpt for any other page, style blog page
+
+Update triggered by 89d33ae2d5fdfdb176d8f9d99917931a25664c92: Update blog archive style
+ Response: HEAD is now at 89d33ae Update blog archive style
+
+Update triggered by 1d454dc0947878562019770d0749d16605df4ad5: Update blog archive style
+ Response: HEAD is now at 1d454dc Update blog archive style
+
+Update triggered by d3e57d6c69b8416de4122f33945fcd2e76b449ea: Extend recent posts widget and replace implementation
+ Response: HEAD is now at d3e57d6 Update recent posts styles
+
+Update triggered by e03044cf92d9a2182112e925330fa76dd98258bb: Update recent posts styles
+ Response: HEAD is now at e03044c Update recent posts styles
+
+Update triggered by 8c47316391692b63840e3ffe9ccdcca86831008e: Update recent posts styles
+ Response: HEAD is now at 8c47316 Update recent posts styles
+
+Update triggered by e1c035a193475fbaadb30ff5bd9304ac947f5f59: Small style updates
+ Response: HEAD is now at e1c035a Small style updates
+
+Update triggered by 5eedb455dc1ddbf78fa0836545b9a36464ed6578: Update bullet style & add GA tracking
+ Response: HEAD is now at 5eedb45 Update bullet style &amp; add GA tracking
+
+Update triggered by 510fb6348fb6a2e72a4157b11cefcc4408bdbb6a: Add project archive styles
+ Response: HEAD is now at 510fb63 Update project archive styles &amp; add single project styles
+
+Update triggered by e8be206a0ca514824e390501f8454f941a164cef: Update project archive styles & add single project styles
+ Response: HEAD is now at e8be206 Update project archive styles &amp; add single project styles
+
+Update triggered by 63dd57e2c178de5207f7a7c74aa4a5dff66d6968: General styling tweaks, adjust background colors, remove post date from page template
+ Response: HEAD is now at 63dd57e Footer styles
+
+Update triggered by 71a050a9773912cded6479c2afdd984193413e8e: Footer styles
+ Response: HEAD is now at 71a050a Footer styles
+
+Update triggered by abcf6609bbfffd49e0caac0b8538fb8acf5064ad: Fix projects archive styles
+ Response: HEAD is now at abcf660 Fix projects archive styles
+
+Update triggered by 1031e85018f163b845fc08a17beeb16fbf425ed1: Fix projects archive styles
+ Response: HEAD is now at 1031e85 Fix projects archive styles
+
+Update triggered by 6faae17908cb5833133ec506f6422f8b3351af5e: Update footer styles
+ Response: HEAD is now at 6faae17 Update footer styles
+
+Update triggered by efeadb4bbb06e0bd23bdc91d5e636ce969dccde7: Remove comments from projects
+ Response: HEAD is now at efeadb4 Remove comments from projects
+
+Update triggered by 7e875574d31ebe026c35d006088ca9afd8e28341: Update flexslider to v2
+ Response: HEAD is now at 7e87557 Add twitter widget, add theme options page
+
+Update triggered by 52fe02e61f4b0d79e5385d841f12a0c1b88a85a4: Update publications page to use citations plugin
+ Response: HEAD is now at 52fe02e Updated twitter feed styles, js, and functionality, Updated publication page template
+
+Update triggered by 2c2605d42b89753739d656bd132130b8f31cfbe6: Turn off css3 animation for flexslider
+ Response: HEAD is now at 2c2605d Rename publications page template filename
+
+Update triggered by 06835df018f76d8d3152114b3087708f9b997094: Change downloads permalink while in dev
+ Response: HEAD is now at 06835df Change downloads permalink while in dev
+
+Update triggered by e566322b370a044dfcb6a39a462f3fc5cbfeb6b6: Workaround in the mean time for downloads page menu item styles
+ Response: HEAD is now at e566322 Workaround in the mean time for downloads page menu item styles
+
+Update triggered by 60c707b453d657e85a50bcd05ddf75c131de5233: Update footer menu margin
+ Response: HEAD is now at 60c707b Update footer menu margin
+
+Update triggered by dfe0a563ca6b8ef384f0f12c0d6415a31acd3685: Add projects widget, style projects widget
+ Response: HEAD is now at dfe0a56 Add projects widget, style projects widget
+
+Update triggered by b23b0f4c8f72bd444e8b4fe28bfe31504966faa0: fix acf fields
+ Response: HEAD is now at b23b0f4 fix acf fields
+
+Update triggered by 879cf3aa90d44975933da8b37552cf9cc7b24eca: added a few responsive styles to be reverted eventually (dropdown menu needs to be implemented on mobile -- for now, it clear the content and shows below)
+ Response: HEAD is now at 879cf3a added a few responsive styles to be reverted eventually (dropdown menu needs to be implemented on mobile -- for now, it clear the content and shows below)
+
+Update triggered by c188d13846913958d836ef29ff434f108d7f46e3: fix form styles
+ Response: HEAD is now at c188d13 fix form styles
+
+Update triggered by 9cb6cb6eea111304490b17965b94b6bd5ee69410: small input style changes
+ Response: HEAD is now at 9cb6cb6 small input style changes
+
+Update triggered by f119a3f4b5e9c6c80f68285b1bb6efbba3f8aab9: small input style changes
+ Response: HEAD is now at f119a3f small input style changes
+
+Update triggered by 66b2be1935132f520b5f07d7225bbae4d7401e0f: Fix error message styles
+ Response: HEAD is now at 66b2be1 Fix error message styles
+
+Update triggered by 9f6860a4434f3aee182d0e5dc4e8574a05e98fec: Add FB comments and load fb sdk, add theme option for fb app id
+ Response: HEAD is now at 9f6860a Add FB comments and load fb sdk, add theme option for fb app id
+
+Update triggered by 526908c3d33188eb31f817d12787cdab9f1899b5: Remove ph# from footer
+ Response: HEAD is now at 526908c Remove ph# from footer
+
+Update triggered by 17c4994f5dba7fe2f7c9a30045585051e283faee: Revert fb comments
+ Response: HEAD is now at 17c4994 Revert fb comments
+
+Update triggered by 139bc91b1ccc256979f9de36a2726c00448b461e: Add basic abotut page resume styling, fix project widget styling
+ Response: HEAD is now at 139bc91 Add basic abotut page resume styling, fix project widget styling
+
+Update triggered by bcb5aee620bc2934a473cd16c02c70aa98fcc285: Fix bug in projects widget
+ Response: HEAD is now at bcb5aee Fix bug in projects widget
+
+Update triggered by c9383de45aa9740412655bd0901b67f9e77f9564: Add about template and fields for uploading resume
+ Response: HEAD is now at c9383de Add about template and fields for uploading resume
+
+Update triggered by cd59054047ff604dbf28501e744da58d2beefcba: Fix responsive styles
+ Response: HEAD is now at cd59054 Update responsive js and styles
+
+Update triggered by f2dc45797248115c65097a6dcca91a5c2b6a4a5a: Update mobile nav styles
+ Response: HEAD is now at f2dc457 Update mobile nav styles
+
+Update triggered by 6765b2ff1d746516d5f24f9bfeb897c1b0769c70: Update mobile nav styles
+ Response: HEAD is now at 6765b2f Update mobile nav styles
+
+Update triggered by ff2678375330412a20c4059a4d0e0eb1d09edef8: Update mobile nav styles
+ Response: HEAD is now at ff26783 Update mobile nav styles
+
+Update triggered by 63b2adc99e344278646be7c8337cac536b3028f9: Update mobile nav styles
+ Response: HEAD is now at 63b2adc Update mobile nav styles
+
+Update triggered by a305ab56ab0221da83c3159134f98e0130604b24: Update mobile nav styles
+ Response: HEAD is now at a305ab5 Update mobile nav styles
+
+Update triggered by e16fbe64ea7dd9449c93ed3f03a89395700f59fa: Update mobile nav styles
+ Response: HEAD is now at e16fbe6 Update mobile nav styles
+
+Update triggered by 93c80008fe44551f32238aa70b502a0c3eb6f3b0: Responsive nav fixes
+ Response: HEAD is now at 93c8000 Responsive nav fixes
+
+Update triggered by 1542465b3e4e0bb7f53868aaf9888b16cd9b3541: Add smoother transitions with css for nav toggle
+ Response: HEAD is now at 1542465 Add smoother transitions with css for nav toggle
+
+Update triggered by a393072ab64dd735b5ce7bf917dd8742f73613f6: Fix mobile nav style
+ Response: HEAD is now at a393072 Fix mobile nav style
+
+Update triggered by 184c53ea1eb0c2ccbc3956a0e016881051a57b27: Add mobile styles for projects archive (position text below image, similar to carousel)
+ Response: HEAD is now at 184c53e Add mobile styles for projects archive (position text below image, similar to carousel)
+
+Update triggered by 97c31067d89d371866095c67cbfa2e0de35f7cf8: Update 404 template
+ Response: HEAD is now at 97c3106 Add touch support for dropdown menus
+
+Update triggered by dc1bdcf9f72828163a0561699975dafa0e7036c4: Add touch support for dropdown menus
+ Response: HEAD is now at dc1bdcf Add touch support for dropdown menus
+
+Update triggered by f37b16a73f4bf6e3250b482c3c3893038ef9a410: Add touch support for dropdown menus
+ Response: HEAD is now at f37b16a Add touch support for dropdown menus
+
+Update triggered by 2563431b7628dd8e64ca2887c548a14726474fc6: Restyle ipad view nav menu
+ Response: HEAD is now at 2563431 Restyle ipad view nav menu
+
+Update triggered by 3b1e4246aaae0146443879a45cca53e469bc2e87: Restyle ipad view nav menu
+ Response: HEAD is now at 3b1e424 Restyle ipad view nav menu
+
+Update triggered by 372f659f1994e1e204d12db2c9a029b23473b90a: Restyle ipad view nav menu
+ Response: HEAD is now at 372f659 Restyle ipad view nav menu
+
+Update triggered by ee735a2d4a2ddc0dd79738ec24d4e1c6872b1bc5: Main nav responsive style tweaks
+ Response: HEAD is now at ee735a2 Main nav responsive style tweaks
+
+Update triggered by 337d9bd798168ce09dec1c9030837dac1a0978b0: Update footer styles
+ Response: HEAD is now at 337d9bd Update carousel nav visited link color
+
+Update triggered by 48cbc29dd12765517f0ad241211a919779f40327: Update base styles for citations list
+ Response: HEAD is now at 48cbc29 Update base styles for citations list
+
+Update triggered by 430c2551f15813273d9438757af5efdd600c9130: Update citations page template
+ Response: HEAD is now at 430c255 Update citations page template
+
+Update triggered by b03a8ae88dda0bc4e0c2facaaaa732192033ea55: Update citations template styles
+ Response: HEAD is now at b03a8ae Update citations template styles
+
+Update triggered by ab4dd54b685b1e391e70354e17a36a11d0cdc08b: Update citations template styles
+ Response: HEAD is now at ab4dd54 Add fields for related literature and publications to projects admin page, use new fields in template
+
+Update triggered by 8634f0d9d7fa7f3a097df6f13e66c87358f2c82c: Fix nonstatic method being called statically
+ Response: HEAD is now at 8634f0d Fix nonstatic method being called statically
+
+Update triggered by 6f90bc4d765adf2f2283db348d6228a396d2cc3c: Fix nonstatic method being called statically
+ Response: HEAD is now at 6f90bc4 Fix nonstatic method being called statically
+
+Update triggered by 4120263791af7ce52823539d8b5010026c7e662c: Extend citations plugin to make use of attached files dependent on ACF plugin, add download button for attached files & corresponding icons/styles
+ Response: HEAD is now at 4120263 Extend citations plugin to make use of attached files dependent on ACF plugin, add download button for attached files &amp; corresponding icons/styles
+
+Update triggered by 83d5ecb99d3cc4b93f549b07d53575470b1cea15: Publications page related citation file icon -- FF bugfix
+ Response: HEAD is now at 83d5ecb Publications page related citation file icon -- FF bugfix
+
+Update triggered by 1ee1b0cf28782831a28bea620a1aa88d630cf291: Downloads admin fields
+ Response: HEAD is now at 1ee1b0c Downloads admin fields
+
+Update triggered by 7d1e71e4ee774e0a3d475222f6caf4c29b341144: Downloads admin fields
+ Response: HEAD is now at 7d1e71e Downloads admin fields
+
+Update triggered by dd13046d162796f08f6443aede3e1304510272c0: Downloads admin fields
+ Response: HEAD is now at dd13046 Downloads admin fields
+
+Update triggered by f7f5ffaa2ddabb3a4448618cb2c4b05dd6f52206: Downloads admin fields
+ Response: HEAD is now at f7f5ffa Downloads admin fields
+
+Update triggered by 0df227cd34c837f0c626696acfc2b79ebd9126a5: Fix link text showing when zooming far out
+ Response: HEAD is now at 0df227c Fix link text showing when zooming far out
+
+Update triggered by 3325f3f7f822278006f1fb2f06857d6ee6f7fefe: Fix link text showing when zooming far out
+ Response: HEAD is now at 3325f3f Fix link text showing when zooming far out
+
+Update triggered by 34c2bd47466e17e1d3655c9b44bd46c355448703: Fix footer social icons & styles
+ Response: HEAD is now at 34c2bd4 Fix footer social icons &amp; styles
+
+Update triggered by f2cbd30866702aacd1d8b87cb3aac3f833c167ee: Header social icon style revert
+ Response: HEAD is now at f2cbd30 Header social icon style revert
+
+Update triggered by c22e74623d3595929e30b4fbb95bc1bd697f75ce: Use color icons for footer social menu
+ Response: HEAD is now at c22e746 Use color icons for footer social menu
+
+Update triggered by c6d3637179013aaed13fbb91680e34565544ba25: Update esume download links to be pdf icons
+ Response: HEAD is now at c6d3637 Update esume download links to be pdf icons
+
+Update triggered by ae92ef64f06806346ff1beab528639099e1bb3b6: Convert downloads to resources
+ Response: HEAD is now at ae92ef6 Convert downloads to resources
+
+Update triggered by 658501677561318470dc9011bfd268f63ee183e4: Add code placeholder & placeholder logic, add fontawesome font, update styles, rename downloads to resources
+ Response: HEAD is now at 6585016 Add code placeholder &amp; placeholder logic, add fontawesome font, update styles, rename downloads to resources
+
+Update triggered by 1f9a092ed782717effb07802739ad60b2fa2e5d0: Add filters for resources
+ Response: HEAD is now at 1f9a092 Add filters for resources
+
+Update triggered by 33f5903902c12a8480f96cf173bdd613650c6349: Update video resources to use youtube thumbnail as placeholder
+ Response: HEAD is now at 33f5903 Update video resources to use youtube thumbnail as placeholder
+
+Update triggered by d4fded5081b072d3862e36be69a5287c4642b0da: Add initial single page templates
+ Response: HEAD is now at d4fded5 Add initial single page templates
+
+Update triggered by 667b8e6dde42931a43674c891183dbb416f871c4: Updates to code resources single page template, fix logo
+ Response: HEAD is now at 667b8e6 Updates to code resources single page template, fix logo
+
+Update triggered by 06003d5a45e320438416d00b519ca1bf0d19c26b: Finish download templates, add icon styles, slightly restructure less to be more modular
+ Response: HEAD is now at 06003d5 Finish download templates, add icon styles, slightly restructure less to be more modular
+
+Update triggered by dadde4b5829a68b84b2e68717aa728388a2e4619: Update logic for file url
+ Response: HEAD is now at dadde4b Update logic for file url
+
+Update triggered by 51add1ff56b3f49046c4e3f92e16a010f65a993d: Tweeks to header logo in small views
+ Response: HEAD is now at 51add1f Tweeks to header logo in small views
+
+Update triggered by 0ae048b75569720f127c61d265a8ce3fbc9cfda2: Tweeks to header logo in small views
+ Response: HEAD is now at 0ae048b Tweeks to header logo in small views
+
+Update triggered by ead2145235036299556c06bcf957889990470521: Tweeks to filter styles on small devices
+ Response: HEAD is now at ead2145 Tweeks to filter styles on small devices
+
+Update triggered by d03099e174d5ec4105a25b09b6bb53896050ec5d: Tweeks to filter styles on small devices
+ Response: HEAD is now at d03099e Tweeks to filter styles on small devices
+
+Update triggered by 0d04d4e744c2e23037fe5b8dbf30967d292697ea: Fixes & changes to twitter feed widget
+ Response: HEAD is now at 0d04d4e Fixes &amp; changes to twitter feed widget
+
+Update triggered by fbb5ccd1cba86ab691859d22f9c7daf97c0163b0: Fixes & changes to twitter feed widget
+ Response: HEAD is now at fbb5ccd Fixes &amp; changes to twitter feed widget
+
+Update triggered by b5148db79c8be43d869cde8940f98ede38bfd9af: Make twitter feed styling less prominent
+ Response: HEAD is now at b5148db Make twitter feed styling less prominent
+
+Update triggered by a12a182c676599df2e28b7cf5784696f9365a5d5: Make twitter feed styling less prominent
+ Response: HEAD is now at a12a182 Make twitter feed styling less prominent
+
+Update triggered by 921c2a51e73bb4ce5df1662595b64f640295814f: Make twitter feed styling less prominent
+ Response: HEAD is now at 921c2a5 Make twitter feed styling less prominent
+
+Update triggered by 34aaf92327e2421e616f5cb90ba65b21a0060d7e: Make twitter feed styling less prominent
+ Response: HEAD is now at 34aaf92 Make twitter feed styling less prominent
+
+Update triggered by b0feb923e8b7650e0779b093b09c0aa975574761: Update _widgets.less
+ Response: HEAD is now at b0feb92 Update _widgets.less
+
+Update triggered by 83d5682cb6e85c86c346286e398b00d1da1ae7a1: Update _widgets.less
+ Response: HEAD is now at 83d5682 Update _widgets.less
+
+Update triggered by 60ac3687f5a1eb952f4387f549aea7d1d839df67: Update custom-twitter-feed-widget.css
+ Response: HEAD is now at 60ac368 Update custom-twitter-feed-widget.css
+
+Update triggered by 0bb9662eb890591ffbda055cc89eb62d6f2e7cc4: Update style.css
+ Response: HEAD is now at 0bb9662 Update style.css
+
+Update triggered by 57d700d064297f0eba602ddd0d2473d88641cc80: Update footer information in 3rd col to be dynamic
+ Response: HEAD is now at 57d700d Update footer information in 3rd col to be dynamic
+
+Update triggered by 068ae721f2a47db3968b4b594d194d277ad988f5: Update register-acf-fields.php
+ Response: HEAD is now at 068ae72 Update register-acf-fields.php
+
+Update triggered by 52a8ff7208dcba3fbc20e302d9f4c5faff289a51: Update register-acf-fields.php
+ Response: HEAD is now at 52a8ff7 Update register-acf-fields.php
+
+Update triggered by 57d700d064297f0eba602ddd0d2473d88641cc80: 
+ Response: HEAD is now at 57d700d Update footer information in 3rd col to be dynamic
+
+Update triggered by f8b22adcfeba7edf92ca3fe450b891bdea386db9: Add github options to resources page
+ Response: HEAD is now at f8b22ad Add github options to resources page
+
+Update triggered by fd21ae2ab970f7c0b8c62a7e40b11c559f630e54: Add template for github repo
+ Response: HEAD is now at fd21ae2 Add template for github repo
+
+Update triggered by d042fd6456dff95f2920b908706463179cb1495a: Add github template for resources content
+ Response: HEAD is now at d042fd6 Add github template for resources content
+
+Update triggered by ac6622ce158ca2311b023d212444c8fe90985df4: Remove bad file
+ Response: HEAD is now at ac6622c Remove bad file
+
+Update triggered by 8730ea2cc9a5fe4780271f960f2c8b2a1067e351: Update gthub resourcs template
+ Response: HEAD is now at 8730ea2 Update gthub resourcs template
+
+Update triggered by b8f4125f4f5ef0ed77392c62933e39ee1a35d60f: Catch new github case
+ Response: HEAD is now at b8f4125 Catch new github case
+
+Update triggered by fb7ce53f8f8c1cfd08d780c9626a92631482355b: Add setting default placeholder for github content
+ Response: HEAD is now at fb7ce53 Add setting default placeholder for github content
+
+Update triggered by a6cdd1ab8e57790b96fcda223abe4c6f62046519: Update custom-twitter-feed-widget.css
+ Response: HEAD is now at a6cdd1a Update custom-twitter-feed-widget.css
+
+Update triggered by 261751cb0d0e05d13999502b37058c5a5d4738e3: Update Twitter feed colors
+ Response: HEAD is now at 261751c Update Twitter feed colors
+
+Update triggered by e8074529509f6a27744b74d0dcc47264a4ee2134: Update style.css
+ Response: HEAD is now at e807452 Update style.css
+
+Update triggered by 978eef77eb1aa56cd18b374d01987b9021659174: Update custom-twitter-feed-widget.css
+ Response: HEAD is now at 978eef7 Update custom-twitter-feed-widget.css
+
+Update triggered by 1b726e48b8a6063f4fa38d4e7be54f1af7a4df0b: Update custom-twitter-feed-widget.css
+ Response: HEAD is now at 1b726e4 Update custom-twitter-feed-widget.css
+
+Update triggered by af1180571160ff3e0efb184ee20bf83b498a0fe9: Update style.css
+ Response: HEAD is now at af11805 Update style.css
+
+Update triggered by 29f4a53ae2ef4f8052a947b891065fa9dd9abc55: Update style.css
+ Response: HEAD is now at 29f4a53 Update style.css
+
+Update triggered by 9776e5d1113e38713fbf1a4697193f2e287a6d26: Update Twitter feed colors
+ Response: HEAD is now at 9776e5d Update Twitter feed colors
+
+Update triggered by ed6b15429dc79b34009887d8909f59d54f984536: Update style.css
+ Response: HEAD is now at ed6b154 Update style.css
+
+Update triggered by 94f9d13294de27889187263f98cdc32b6206b620: add certifications widget
+ Response: HEAD is now at 94f9d13 add certifications widget
+
+Update triggered by 99608e31091ff88cd2bc50373c0e3f5e16f5e5a0: fixes for new wp update cert widget
+ Response: HEAD is now at 99608e3 fixes for new wp update cert widget
+
+Update triggered by 6c42ad2ac055c2b29da141d2fbfa7a19ab861d43: fixes for new wp update cert widget
+ Response: HEAD is now at 6c42ad2 fixes for new wp update cert widget
+
+Update triggered by f8f461591a16f1e8717400c70dd0e1a261800838: fixes for new wp update cert widget
+ Response: HEAD is now at f8f4615 fixes for new wp update cert widget
+
+Update triggered by 640e7f2a4df170ab599430f584b663abd8301679: fixes for new wp update cert widget
+ Response: HEAD is now at 640e7f2 fixes for new wp update cert widget
+
+Update triggered by a1819effee0e57171654e686052ef364d4729976: debug
+ Response: HEAD is now at a1819ef debug
+
+Update triggered by 82c247a12c80ee5574e5277083e90054140007a9: debug
+ Response: HEAD is now at 82c247a debug
+
+Update triggered by ef515a8b34dba3d1e275ec116ef9dbf6e431dbdb: debug
+ Response: HEAD is now at ef515a8 debug
+
+Update triggered by 610db5f3864749d2070025aae93748f7c0f9f300: debug
+ Response: HEAD is now at 610db5f debug
+
+Update triggered by 1d5a3797ab4da888757bafff1f57480f32ae48d0: remove debug
+ Response: HEAD is now at 1d5a379 remove debug
+
+Update triggered by c7e674ea891fbca68221ebb49907f81daecc403e: show all publications instead of default 10
+ Response: HEAD is now at c7e674e show all publications instead of default 10
+

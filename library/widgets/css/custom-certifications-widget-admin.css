@@ -1,0 +1,56 @@
+.certification-logos-container {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.certification-select-container {
+	display: table;
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 10px;
+}
+
+.certification-select-container select,
+.button.certification-delete-button {
+	display: table-cell;
+}
+
+.certification-select-container select {
+	width: 100%;
+	text-overflow: ellipsis;
+}
+
+.button.certification-delete-button {
+	background: #d9534f;
+	background-image: none;
+	border-color: #d43f3a;
+	color: #FFF;
+	width: auto;
+	margin-left: 5px;
+	text-shadow: 0 1px 0 #d43f3a;
+	text-align: center;
+}
+
+.button.certification-delete-button:hover {
+	background: #c9302c;
+	border-color: #ac2925;
+	color: #FFF;
+}
+
+.button.certification-add-button {
+	background: #5cb85c;
+	background-image: none;
+	border-color: #4cae4c;
+	color: #FFF;
+	margin: 0 0 10px;
+	width: 100%;
+	margin: 5px 0;
+	text-align: center;
+	text-shadow: 0 1px 0 #4cae4c;
+}
+
+.button.certification-add-button:hover {
+	background: #449d44;
+	border-color: #398439;
+	color: #FFF;
+}

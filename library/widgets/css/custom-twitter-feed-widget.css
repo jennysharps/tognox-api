@@ -1,0 +1,62 @@
+.widget.widget_custom_twitter_feed_widget ul.slides li {
+    height: 175px;
+    margin: 0;   
+}
+
+/* Twitter Widget */
+.widget_custom_twitter_feed_widget {
+    /*background-image: linear-gradient(
+        to right top,
+        rgba(0, 0, 0, 0.25) 33%,
+        rgba(0, 0, 0, 0.15) 33%,
+        rgba(0, 0, 0, 0.15) 66%,
+        rgba(0, 0, 0, 0.25) 66%
+    );
+    background-size: 5px 3px;*/
+    background: rgba(0, 0, 0, 0.25);
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    -moz-box-shadow:    inset 0 0 10px rgba(0,0,0,0.15);
+   	-webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.15);
+   	box-shadow:         inset 0 0 10px rgba(0,0,0,0.15);
+}
+
+.widget_custom_twitter_feed_widget .widgettitle {
+   margin: 0;
+   padding: 0.5rem 1rem 0;
+   border-bottom: none;
+   font-weight: bolder;
+   border-bottom: 2px solid;
+   -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+   -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.widget_custom_twitter_feed_widget .widgettitle .fa-icon:before {
+   padding-right: 0.5rem;
+}
+
+.widget_custom_twitter_feed_widget .flex-viewport {
+	background: rgba(0, 0, 0, 0.45);
+	color: white;
+	-moz-box-shadow:    inset 0 0 20px rgba(0,0,0,0.5);
+   	-webkit-box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+   	box-shadow:         inset 0 0 20px rgba(0,0,0,0.5);
+}
+
+.widget_custom_twitter_feed_widget .flex-viewport .slides {
+	padding: 1rem 0;
+}
+
+.widget_custom_twitter_feed_widget .flex-viewport .slides li {
+	padding: 0 1rem;
+	font-weight: 200;
+}
+
+.widget_custom_twitter_feed_widget a,
+.widget_custom_twitter_feed_widget a:active {
+	color: rgba(250, 250, 250, 0.75);
+	font-weight: bold;
+	text-decoration: none;
+}

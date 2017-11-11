@@ -1,0 +1,12 @@
+#acf_acf_resource-options .field {
+    display: none;
+}
+
+#acf_acf_resource-options #acf-resource_type.field,
+#acf_acf_resource-options .current.field {
+    display: block;
+}
+
+#attachment_typesdiv {
+	display: none;
+}
