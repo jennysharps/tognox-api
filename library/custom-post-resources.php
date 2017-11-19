@@ -37,7 +37,8 @@ function custom_post_resources() {
 			//'register_meta_box_cb' => 'custom_Download_metaboxes',
 			// the next one is important, it tells what's enabled in the post editor
 			'supports' => array( 'title', 'editor', 'thumbnail', 'revisions', 'sticky'),
-			'taxonomies' => array('category', 'post_tag')
+			'taxonomies' => array('category', 'post_tag'),
+			'show_in_rest' => true
 	 	) // end of options
 	); // end of register post type
 

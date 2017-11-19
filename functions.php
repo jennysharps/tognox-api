@@ -422,3 +422,43 @@ function tognox_add_tags_to_attachments() {
     register_taxonomy_for_object_type( 'post_tag', 'attachment' );
 }
 add_action( 'init' , 'tognox_add_tags_to_attachments' );
+
+function tognox_get_citations_data($citation_ids = []) {
+    $citations = [];
+    if(function_exists('get_citation')) {
+        foreach($citation_ids as $citation_id) {
+            $citations[] = [
+                id => $citation_id,
+                rendered => get_citation($citation_id)
+            ];
+        }
+    }
+    return $citations;
+}
+
+function tognox_register_api_hooks() {
+    // Add the plaintext content to GET requests for individual posts
+    register_rest_field(
+        'main_projects',
+        'presentation',
+        array(
+            'get_callback' => function($post) {
+                return isset($meta['presentation'][0]) ? unserialize($meta['presentation'][0]) : '';
+            },
+        )
+    );
+
+    register_rest_field(
+        'main_projects',
+        'citations',
+        array(
+            'get_callback' => function($post) {
+                $meta = get_post_meta($post['id']);
+                $related_citation_ids = isset($meta['related_citations']) ? unserialize($meta['related_citations'][0]) : [];
+                return tognox_get_citations_data($related_citation_ids);
+            },
+        )
+    );
+}
+
+add_action( 'rest_api_init', 'tognox_register_api_hooks' );

@@ -37,7 +37,9 @@ function custom_post_projects() {
 			//'register_meta_box_cb' => 'custom_project_metaboxes',
 			// the next one is important, it tells what's enabled in the post editor
 			'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'trackbacks', 'custom-fields', 'comments', 'revisions', 'sticky'),
-			'taxonomies' => array('post_tag')
+			'taxonomies' => array('post_tag'),
+			'show_in_rest' => true,
+			'rest_base' => 'projects'
 	 	) // end of options
 	); // end of register post type
 	
