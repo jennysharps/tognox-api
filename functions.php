@@ -459,6 +459,25 @@ function tognox_register_api_hooks() {
             },
         )
     );
+
+    register_rest_field(
+        array('pages', 'posts', 'main_projects'),
+        'tags',
+        array(
+            'get_callback' => function($post) {
+                $tags = wp_get_post_tags($post['id']);
+                $tags_response = [];
+                foreach ($tags as $tag) {
+                    $tags_response[] = [
+                        'id' => $tag->term_id,
+                        'name' => $tag->name,
+                        'slug' => $tag->slug
+                    ];
+                }
+                return $tags_response;
+            },
+        )
+    );
 }
 
 add_action( 'rest_api_init', 'tognox_register_api_hooks' );
