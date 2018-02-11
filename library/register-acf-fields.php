@@ -177,6 +177,15 @@ if ( function_exists( "register_field_group" ) ) {
         'title' => 'Attached Files',
         'fields' => array (
             array (
+                'key' => 'field_5a80a20c4a477',
+                'label' => 'Blurb',
+                'name' => 'blurb',
+                'type' => 'wysiwyg',
+                'default_value' => '',
+                'toolbar' => 'full',
+                'media_upload' => 'no',
+            ),
+            array (
                 'key' => 'field_51df77196c34c',
                 'label' => 'File 1 Name',
                 'name' => 'file_1_name',

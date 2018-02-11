@@ -436,6 +436,29 @@ function tognox_get_citations_data($citation_ids = []) {
     return $citations;
 }
 
+function tognox_get_yoast_title($post_id) {
+    $yoast_title = get_post_meta($post_id, '_yoast_wpseo_title', true);
+    $title = strstr($yoast_title, '%%', true);
+
+    if (empty($title)) {
+        $title = get_the_title($post_id);
+    }
+
+    $wpseo_titles = get_option('wpseo_titles');
+    $sep_options = WPSEO_Option_Titles::get_instance()->get_separator_options();
+
+    if (isset($wpseo_titles['separator']) && isset($sep_options[$wpseo_titles['separator']])) {
+        $sep = $sep_options[$wpseo_titles['separator']];
+    } else {
+        $sep = '-'; //setting default separator if Admin didn't set it from backed
+    }
+
+    $site_title = get_bloginfo('name');
+    $meta_title = $title . ' ' . $sep . ' ' . $site_title;
+
+    return $meta_title;
+}
+
 function tognox_register_api_hooks() {
     // Add the plaintext content to GET requests for individual posts
     register_rest_field(
@@ -461,7 +484,54 @@ function tognox_register_api_hooks() {
     );
 
     register_rest_field(
-        array('pages', 'posts', 'main_projects'),
+        'resources',
+        'meta',
+        array(
+            'get_callback' => function($post) {
+                $meta = get_post_meta($post['id']);
+                $return_meta = [];
+
+                switch ($meta['resource_type'][0]) {
+                    case 'file': {
+                        $return_meta['file_url'] = isset($meta['related-file'][0]) && $meta['related-file'][0]
+                            ? wp_get_attachment_url($meta['related-file'][0])
+                            : '';
+                        $return_meta['button_text'] = $meta['button-text'][0] ? $meta['button-text'][0] : '';
+                        break;
+                    }
+                    case 'gist': {
+                        $return_meta['gist_id'] = $meta['gist-id'][0] ? $meta['gist-id'][0] : '';
+
+                        break;
+                    }
+                    case 'github': {
+                         $return_meta['github_url'] = $meta['github-url'][0] ? $meta['github-url'][0] : '';
+                    }
+                    case 'video': {
+                        $return_meta['video_url'] = 'https://www.youtube.com/embed/' . $meta['video-id'][0];
+                    }
+                }
+
+                return $return_meta;
+            },
+        )
+    );
+
+    register_rest_field(
+        'resources',
+        'template_type',
+        array(
+            'get_callback' => function($post) {
+                $meta = get_post_meta($post['id']);
+                return $meta['resource_type'][0];
+            },
+        )
+    );
+
+    $tagged_post_types = ['page', 'post', 'main_projects', 'resources'];
+
+    register_rest_field(
+        $tagged_post_types,
         'tags',
         array(
             'get_callback' => function($post) {
@@ -477,6 +547,124 @@ function tognox_register_api_hooks() {
                 return $tags_response;
             },
         )
+    );
+
+    register_rest_field(
+        'page',
+        'carousel_items',
+        array(
+            'get_callback' => function($post) {
+                $carousel_posts = get_field('carousel_items', $post['id']);
+                $carousel_items = [];
+                foreach($carousel_posts as $carousel_post) {
+                    $image_attributes = wp_get_attachment_image_src(
+                        get_post_thumbnail_id($carousel_post->ID),
+                        'homepage-carousel'
+                    );
+                    $carousel_items[] = [
+                        'id' => $carousel_post->ID,
+                        'description' => get_the_excerpt($carousel_post->ID),
+                        'image_meta' => [
+                            'alt' => get_the_title($carousel_post->ID),
+                            'height' => $image_attributes[2],
+                            'url' => $image_attributes[0],
+                            'width' => $image_attributes[1]
+                        ],
+                        'title' => get_the_title($carousel_post->ID)
+                    ];
+                }
+                return $carousel_items;
+            },
+        )
+    );
+
+    register_rest_field(
+        'page',
+        'quotation',
+        array(
+            'get_callback' => function($post) {
+                $meta = get_post_meta($post['id']);
+                return [
+                    'quote' => isset($meta['quote'][0]) ? $meta['quote'][0] : null,
+                    'attribution' => isset($meta['attribution'][0]) ? $meta['attribution'][0] : null
+                ];
+            },
+        )
+    );
+
+    register_rest_field(
+        'page',
+        'blurb',
+        array(
+            'get_callback' => function($post) {
+                return [ 'rendered' => get_field('blurb', $post['id']) ];
+            },
+        )
+    );
+
+    $all_post_types = get_post_types(
+        [
+            'public' => true,
+            'exclude_from_search' => false
+       ],
+       'names'
+    );
+
+    register_rest_field(
+        $all_post_types,
+        'seo',
+        array(
+            'get_callback' => function($post) {
+                $meta = get_post_meta($post['id']);
+                $description = $meta['_yoast_wpseo_metadesc'][0]
+                    ? $meta['_yoast_wpseo_metadesc'][0]
+                    : strip_tags(get_the_excerpt($post['id']));
+                $title = $meta['_yoast_wpseo_title'][0]
+                    ? $meta['_yoast_wpseo_title'][0]
+                    : get_the_title($post['id']);
+
+                $seo = [
+                    'description' => $description,
+                    'title' => $title
+                ];
+
+                return $seo;
+            },
+        )
+    );
+
+    register_rest_route(
+        'wp/v2',
+        '/ui',
+        [
+            [
+                'methods'   => WP_REST_Server::READABLE,
+                'callback'  => function ($request) {
+                    $frontpage_id = get_option( 'page_on_front' );
+                    $theme_options = get_option('theme_options');
+                    $site_description = get_bloginfo('description');
+                    $site_title = get_bloginfo('name');
+                    $seo_seperator = '-';
+
+                    if (class_exists(WPSEO_Option_Titles)) {
+                        $seo_titles = get_option('wpseo_titles');
+                        $seo_serperator_key = $seo_titles['separator'];
+                        $seo_seperator_options = WPSEO_Option_Titles::get_instance()->get_separator_options();
+                        if (isset($seo_serperator_key) && isset($seo_seperator_options[$seo_serperator_key])) {
+                            $seo_seperator = $seo_seperator_options[$seo_serperator_key];
+                        }
+                    }
+
+                    return [
+                        'frontpage' => get_post_field('post_name', $frontpage_id),
+                        'ga_id' => $theme_options['ga_id'],
+                        'site_description' => $site_description,
+                        'site_title' => $site_title,
+                        'seo_title_format' => '%s ' . $seo_seperator . ' ' . $site_title
+                    ];
+                }
+            ]
+        ]
     );
 }
 
