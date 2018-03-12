@@ -86,6 +86,12 @@ You can change the names and dimensions to whatever
 you like. Enjoy!
 */
 
+function tognox_mime_types($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+}
+add_filter('upload_mimes', 'tognox_mime_types');
+
 /************* ACTIVE SIDEBARS ********************/
 
 // Sidebars & Widgetizes Areas
@@ -598,6 +604,60 @@ function tognox_register_api_hooks() {
         array(
             'get_callback' => function($post) {
                 return [ 'rendered' => get_field('blurb', $post['id']) ];
+            },
+        )
+    );
+
+    register_rest_field(
+        'page',
+        'education',
+        array(
+            'get_callback' => function($post) {
+                return get_field('education', $post['id']);
+            },
+        )
+    );
+
+    register_rest_field(
+        'page',
+        'hobbies',
+        array(
+            'get_callback' => function($post) {
+                $hobbies = get_field('hobbies', $post['id']);
+                foreach($hobbies as $key => $hobby) {
+                    $hobbies[$key]['icon'] = $hobby['icon']['url'] ? $hobby['icon']['url'] : '';
+                }
+                return $hobbies;
+            },
+        )
+    );
+
+    register_rest_field(
+        'page',
+        'related_content',
+        array(
+            'get_callback' => function($post) {
+                $content = [];
+                $front_page_id = (int)get_option( 'page_on_front');
+                if ($front_page_id === $post['id']) {
+                    $content['about'] = get_fields(get_page_by_path('about')->ID);
+                    foreach($content['about']['hobbies'] as $key => $hobby) {
+                        $content['about']['hobbies'][$key]['icon'] = $hobby['icon']['url'] ? $hobby['icon']['url'] : '';
+                    }
+                    $content['projects'] = get_posts('post_type=main_projects&posts_per_page=9');
+                    foreach($content['projects'] as $key => $project) {
+                        $thumbnail_id = get_post_thumbnail_id($project->ID);
+                        $thumbnail = wp_get_attachment_image_src($thumbnail_id, 'wide-thumb');
+                        $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+                        $project->image_meta = [
+                            'alt' => $alt ? $alt : $project->post_title,
+                            'width' => $thumbnail[1],
+                            'height' => $thumbnail[2],
+                            'url' => $thumbnail[0]
+                        ];
+                    }
+                }
+                return $content;
             },
         )
     );
